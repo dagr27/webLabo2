@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de empleo</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1 align="center">Curriculum Vitae</h1>
+        <fieldset>
+            <legend>Personal Data</legend>
+
+            <label for="dui">DUI:</label>
+            <input type="text" name="dui" id="dui" placeholder="048134128" required>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" name="name" id="name" placeholder="First Name" required>
+            
+            <label for="">Gender</label>
+            <label><input type="radio" name="gender" value="M">M</label>
+            <label><input type="radio" name="gender" value="F">F</label>
+            
+            <label for="con">Contact number:</label>
+            <input type="text" name="con" id="con" required>
+            
+            <label for="bday">Brith date</label>
+            <input type="date" name="bday" value="1999-07-27" required>
+            
+            <label for="con">Civil Status:</label>
+            <select name="civil" id="civil">
+                <option value="Soltero">Soltero</option>
+                <option value="Casado">Casado</option>
+            </select>
+            
+            <label for="files"> Image</label>
+            <input type="file" name="file" id="files" accept="image/*" required>
+        </fieldset>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <textarea name="exp" id="exp" cols="220" rows="10" placeholder="Experience" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Training</legend>
+            <textarea name="trai" id="trai" cols="220" rows="10" placeholder="Academic Training" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Futher Training</legend>
+            <fieldset>
+                <legend>Programing Languages</legend>
+                <label><input type="checkbox" name="program[]"> Java</label>
+                <label><input type="checkbox" name="program[]"> C#</label>
+                <label><input type="checkbox" name="program[]"> Python</label>
+                <label><input type="checkbox" name="program[]"> C++</label>
+                <label><input type="checkbox" name="program[]"> Ruby</label>
+            </fieldset>
+            <fieldset>
+                <legend>Web Technologies</legend>
+                <label><input type="checkbox" name="programL" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="programL" value="CSS"> CSS/CSS3</label>
+                <label><input type="checkbox" name="programL" value="Materialize"> Materialize Css</label>
+                <label><input type="checkbox" name="programL" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" name="programL" value="Node.JS"> Node.JS</label>
+                <label><input type="checkbox" name="programL" value="Spring MVC"> Spring MVC</label>
+            </fieldset>
+        </fieldset>
+        <br>
+        <input type="submit" value="Send">
+            <a href="index.html">
+        <input type="button" value="Cancel">
+        </a>
+    </form>GET
+</body>
+</html>
